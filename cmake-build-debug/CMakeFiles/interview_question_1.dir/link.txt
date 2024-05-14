@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g -Wl,--enable-auto-import CMakeFiles/interview_question_1.dir/Unit_2/interview_question_1.cpp.o -o interview_question_1.exe -Wl,--out-implib,libinterview_question_1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
