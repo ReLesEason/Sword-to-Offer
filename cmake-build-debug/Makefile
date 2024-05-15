@@ -129,6 +129,19 @@ interview_question_1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/interview_question_1.dir/build.make CMakeFiles/interview_question_1.dir/build
 .PHONY : interview_question_1/fast
 
+#=============================================================================
+# Target rules for targets named interview_question_2
+
+# Build rule for target.
+interview_question_2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 interview_question_2
+.PHONY : interview_question_2
+
+# fast build rule for target.
+interview_question_2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interview_question_2.dir/build.make CMakeFiles/interview_question_2.dir/build
+.PHONY : interview_question_2/fast
+
 Unit_2/interview_question_1.o: Unit_2/interview_question_1.cpp.o
 .PHONY : Unit_2/interview_question_1.o
 
@@ -153,6 +166,30 @@ Unit_2/interview_question_1.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/interview_question_1.dir/build.make CMakeFiles/interview_question_1.dir/Unit_2/interview_question_1.cpp.s
 .PHONY : Unit_2/interview_question_1.cpp.s
 
+Unit_2/interview_question_2.o: Unit_2/interview_question_2.cpp.o
+.PHONY : Unit_2/interview_question_2.o
+
+# target to build an object file
+Unit_2/interview_question_2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interview_question_2.dir/build.make CMakeFiles/interview_question_2.dir/Unit_2/interview_question_2.cpp.o
+.PHONY : Unit_2/interview_question_2.cpp.o
+
+Unit_2/interview_question_2.i: Unit_2/interview_question_2.cpp.i
+.PHONY : Unit_2/interview_question_2.i
+
+# target to preprocess a source file
+Unit_2/interview_question_2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interview_question_2.dir/build.make CMakeFiles/interview_question_2.dir/Unit_2/interview_question_2.cpp.i
+.PHONY : Unit_2/interview_question_2.cpp.i
+
+Unit_2/interview_question_2.s: Unit_2/interview_question_2.cpp.s
+.PHONY : Unit_2/interview_question_2.s
+
+# target to generate assembly for a file
+Unit_2/interview_question_2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interview_question_2.dir/build.make CMakeFiles/interview_question_2.dir/Unit_2/interview_question_2.cpp.s
+.PHONY : Unit_2/interview_question_2.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,9 +199,13 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... interview_question_1"
+	@echo "... interview_question_2"
 	@echo "... Unit_2/interview_question_1.o"
 	@echo "... Unit_2/interview_question_1.i"
 	@echo "... Unit_2/interview_question_1.s"
+	@echo "... Unit_2/interview_question_2.o"
+	@echo "... Unit_2/interview_question_2.i"
+	@echo "... Unit_2/interview_question_2.s"
 .PHONY : help
 
 
