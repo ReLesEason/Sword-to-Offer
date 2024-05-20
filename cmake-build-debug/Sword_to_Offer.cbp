@@ -143,6 +143,48 @@
 					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/User/CLionProjects/Sword-to-Offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="interview_question_3">
+				<Option output="/cygdrive/c/Users/User/CLionProjects/Sword-to-Offer/cmake-build-debug/interview_question_3.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/User/CLionProjects/Sword-to-Offer/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/11/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/11/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/11/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/11/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/11/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/User/CLionProjects/Sword-to-Offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 interview_question_3"/>
+					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/User/CLionProjects/Sword-to-Offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/User/CLionProjects/Sword-to-Offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/User/CLionProjects/Sword-to-Offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="interview_question_3/fast">
+				<Option output="/cygdrive/c/Users/User/CLionProjects/Sword-to-Offer/cmake-build-debug/interview_question_3.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/User/CLionProjects/Sword-to-Offer/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/11/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/11/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/11/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/11/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/11/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/User/CLionProjects/Sword-to-Offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 interview_question_3/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/User/CLionProjects/Sword-to-Offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/User/CLionProjects/Sword-to-Offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/User/CLionProjects/Sword-to-Offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="/cygdrive/c/Users/User/CLionProjects/Sword-to-Offer/cmake-build-debug"/>
 				<Option type="4"/>
@@ -169,6 +211,9 @@
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/User/CLionProjects/Sword-to-Offer/Unit_2/interview_question_2.cpp">
 			<Option target="interview_question_2"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/User/CLionProjects/Sword-to-Offer/Unit_2/interview_question_3.cpp">
+			<Option target="interview_question_3"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/User/CLionProjects/Sword-to-Offer/labuladong/labuladong_question_list_leetcode/20.cpp">
 			<Option target="20"/>

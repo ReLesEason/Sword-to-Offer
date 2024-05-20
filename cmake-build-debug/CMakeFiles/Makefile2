@@ -66,6 +66,7 @@ CMAKE_BINARY_DIR = /cygdrive/c/Users/User/CLionProjects/Sword-to-Offer/cmake-bui
 all: CMakeFiles/interview_question_1.dir/all
 all: CMakeFiles/interview_question_2.dir/all
 all: CMakeFiles/20.dir/all
+all: CMakeFiles/interview_question_3.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -76,6 +77,7 @@ preinstall:
 clean: CMakeFiles/interview_question_1.dir/clean
 clean: CMakeFiles/interview_question_2.dir/clean
 clean: CMakeFiles/20.dir/clean
+clean: CMakeFiles/interview_question_3.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -155,6 +157,32 @@ CMakeFiles/20.dir/rule: cmake_check_build_system
 CMakeFiles/20.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/20.dir/build.make CMakeFiles/20.dir/clean
 .PHONY : CMakeFiles/20.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/interview_question_3.dir
+
+# All Build rule for target.
+CMakeFiles/interview_question_3.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interview_question_3.dir/build.make CMakeFiles/interview_question_3.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interview_question_3.dir/build.make CMakeFiles/interview_question_3.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/c/Users/User/CLionProjects/Sword-to-Offer/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target interview_question_3"
+.PHONY : CMakeFiles/interview_question_3.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/interview_question_3.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/User/CLionProjects/Sword-to-Offer/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/interview_question_3.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/User/CLionProjects/Sword-to-Offer/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/interview_question_3.dir/rule
+
+# Convenience name for target.
+interview_question_3: CMakeFiles/interview_question_3.dir/rule
+.PHONY : interview_question_3
+
+# clean rule for target.
+CMakeFiles/interview_question_3.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/interview_question_3.dir/build.make CMakeFiles/interview_question_3.dir/clean
+.PHONY : CMakeFiles/interview_question_3.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
