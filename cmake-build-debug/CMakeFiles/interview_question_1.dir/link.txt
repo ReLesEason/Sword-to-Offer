@@ -1,1 +1,3 @@
-/usr/bin/c++.exe -g -Wl,--enable-auto-import CMakeFiles/interview_question_1.dir/Unit_2/interview_question_1.cpp.o -o interview_question_1.exe -Wl,--out-implib,libinterview_question_1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+"E:\Clion\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\interview_question_1.dir/objects.a
+E:\Qt\Tools\mingw1120_64\bin\ar.exe qc CMakeFiles\interview_question_1.dir/objects.a @CMakeFiles\interview_question_1.dir\objects1.rsp
+E:\Qt\Tools\mingw1120_64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\interview_question_1.dir/objects.a -Wl,--no-whole-archive -o interview_question_1.exe -Wl,--out-implib,libinterview_question_1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\interview_question_1.dir\linklibs.rsp

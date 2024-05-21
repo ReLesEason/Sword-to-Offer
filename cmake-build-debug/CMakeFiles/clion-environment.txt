@@ -1,4 +1,4 @@
-ToolSet: 3.3.6 (local)@E:\Cygwin64
+ToolSet: w64 10.0 (local)@E:\Qt\Tools\mingw1120_64
 Options: 
 
 Options:

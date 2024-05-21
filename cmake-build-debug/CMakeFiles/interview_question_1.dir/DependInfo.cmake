@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/cygdrive/c/Users/User/CLionProjects/Sword-to-Offer/Unit_2/interview_question_1.cpp" "CMakeFiles/interview_question_1.dir/Unit_2/interview_question_1.cpp.o" "gcc" "CMakeFiles/interview_question_1.dir/Unit_2/interview_question_1.cpp.o.d"
+  "C:/Users/User/CLionProjects/Sword-to-Offer/Unit_2/interview_question_1.cpp" "CMakeFiles/interview_question_1.dir/Unit_2/interview_question_1.cpp.obj" "gcc" "CMakeFiles/interview_question_1.dir/Unit_2/interview_question_1.cpp.obj.d"
   )
 
 # Targets to which this target links.
