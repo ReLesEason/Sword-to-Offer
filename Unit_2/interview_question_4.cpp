@@ -171,7 +171,7 @@ void test_3()
     int rows = sizeof(arr)/sizeof(arr[0]);
     int cols = sizeof(arr[0])/sizeof(arr[0][0]);
     cout<<"rows: "<<rows<<" cols: "<<cols<<endl;
-    int target = 17;
+    int target = 27;
     Solution_2 s;
 
 //    bool result = s.findNumberIn2DArray(arr,rows,cols,target);     // arr 类型为 int* [M]  指向int数组的指针
@@ -248,11 +248,20 @@ void test_4()
     }
 }
 
+void test_5()
+{
+    cout<<"------------------------------------------------test_5------------------------------------------------------"<<endl;
+
+    Solution_2 s;
+    cout<<s.findNumberIn2DArray(nullptr,0,0,0)<<endl;
+}
+
 int main() {
     test_1();
     test_2();
     test_3();
     test_4();
+    test_5();
 
     return 0;
 }
