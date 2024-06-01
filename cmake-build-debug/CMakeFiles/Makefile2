@@ -69,6 +69,7 @@ all: CMakeFiles/interview_question_3.dir/all
 all: CMakeFiles/interview_question_3_2.dir/all
 all: CMakeFiles/interview_question_4.dir/all
 all: CMakeFiles/interview_question_5.dir/all
+all: CMakeFiles/21.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -83,6 +84,7 @@ clean: CMakeFiles/interview_question_3.dir/clean
 clean: CMakeFiles/interview_question_3_2.dir/clean
 clean: CMakeFiles/interview_question_4.dir/clean
 clean: CMakeFiles/interview_question_5.dir/clean
+clean: CMakeFiles/21.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -92,7 +94,7 @@ clean: CMakeFiles/interview_question_5.dir/clean
 CMakeFiles/interview_question_1.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\interview_question_1.dir\build.make CMakeFiles/interview_question_1.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\interview_question_1.dir\build.make CMakeFiles/interview_question_1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\CLionProjects\Sword-to-Offer\cmake-build-debug\CMakeFiles --progress-num=3,4 "Built target interview_question_1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\CLionProjects\Sword-to-Offer\cmake-build-debug\CMakeFiles --progress-num=5,6 "Built target interview_question_1"
 .PHONY : CMakeFiles/interview_question_1.dir/all
 
 # Build rule for subdir invocation for target.
@@ -118,7 +120,7 @@ CMakeFiles/interview_question_1.dir/clean:
 CMakeFiles/interview_question_2.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\interview_question_2.dir\build.make CMakeFiles/interview_question_2.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\interview_question_2.dir\build.make CMakeFiles/interview_question_2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\CLionProjects\Sword-to-Offer\cmake-build-debug\CMakeFiles --progress-num=5,6 "Built target interview_question_2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\CLionProjects\Sword-to-Offer\cmake-build-debug\CMakeFiles --progress-num=7,8 "Built target interview_question_2"
 .PHONY : CMakeFiles/interview_question_2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -170,7 +172,7 @@ CMakeFiles/20.dir/clean:
 CMakeFiles/interview_question_3.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\interview_question_3.dir\build.make CMakeFiles/interview_question_3.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\interview_question_3.dir\build.make CMakeFiles/interview_question_3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\CLionProjects\Sword-to-Offer\cmake-build-debug\CMakeFiles --progress-num=7,8 "Built target interview_question_3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\CLionProjects\Sword-to-Offer\cmake-build-debug\CMakeFiles --progress-num=9,10 "Built target interview_question_3"
 .PHONY : CMakeFiles/interview_question_3.dir/all
 
 # Build rule for subdir invocation for target.
@@ -196,7 +198,7 @@ CMakeFiles/interview_question_3.dir/clean:
 CMakeFiles/interview_question_3_2.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\interview_question_3_2.dir\build.make CMakeFiles/interview_question_3_2.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\interview_question_3_2.dir\build.make CMakeFiles/interview_question_3_2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\CLionProjects\Sword-to-Offer\cmake-build-debug\CMakeFiles --progress-num=9,10 "Built target interview_question_3_2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\CLionProjects\Sword-to-Offer\cmake-build-debug\CMakeFiles --progress-num=11,12 "Built target interview_question_3_2"
 .PHONY : CMakeFiles/interview_question_3_2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -222,7 +224,7 @@ CMakeFiles/interview_question_3_2.dir/clean:
 CMakeFiles/interview_question_4.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\interview_question_4.dir\build.make CMakeFiles/interview_question_4.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\interview_question_4.dir\build.make CMakeFiles/interview_question_4.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\CLionProjects\Sword-to-Offer\cmake-build-debug\CMakeFiles --progress-num=11,12 "Built target interview_question_4"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\CLionProjects\Sword-to-Offer\cmake-build-debug\CMakeFiles --progress-num=13,14 "Built target interview_question_4"
 .PHONY : CMakeFiles/interview_question_4.dir/all
 
 # Build rule for subdir invocation for target.
@@ -248,7 +250,7 @@ CMakeFiles/interview_question_4.dir/clean:
 CMakeFiles/interview_question_5.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\interview_question_5.dir\build.make CMakeFiles/interview_question_5.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\interview_question_5.dir\build.make CMakeFiles/interview_question_5.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\CLionProjects\Sword-to-Offer\cmake-build-debug\CMakeFiles --progress-num=13,14 "Built target interview_question_5"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\CLionProjects\Sword-to-Offer\cmake-build-debug\CMakeFiles --progress-num=15,16 "Built target interview_question_5"
 .PHONY : CMakeFiles/interview_question_5.dir/all
 
 # Build rule for subdir invocation for target.
@@ -266,6 +268,32 @@ interview_question_5: CMakeFiles/interview_question_5.dir/rule
 CMakeFiles/interview_question_5.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\interview_question_5.dir\build.make CMakeFiles/interview_question_5.dir/clean
 .PHONY : CMakeFiles/interview_question_5.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/21.dir
+
+# All Build rule for target.
+CMakeFiles/21.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\21.dir\build.make CMakeFiles/21.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\21.dir\build.make CMakeFiles/21.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\CLionProjects\Sword-to-Offer\cmake-build-debug\CMakeFiles --progress-num=3,4 "Built target 21"
+.PHONY : CMakeFiles/21.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/21.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User\CLionProjects\Sword-to-Offer\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/21.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User\CLionProjects\Sword-to-Offer\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/21.dir/rule
+
+# Convenience name for target.
+21: CMakeFiles/21.dir/rule
+.PHONY : 21
+
+# clean rule for target.
+CMakeFiles/21.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\21.dir\build.make CMakeFiles/21.dir/clean
+.PHONY : CMakeFiles/21.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -206,6 +206,19 @@ interview_question_5/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\interview_question_5.dir\build.make CMakeFiles/interview_question_5.dir/build
 .PHONY : interview_question_5/fast
 
+#=============================================================================
+# Target rules for targets named 21
+
+# Build rule for target.
+21: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 21
+.PHONY : 21
+
+# fast build rule for target.
+21/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\21.dir\build.make CMakeFiles/21.dir/build
+.PHONY : 21/fast
+
 Unit_2/interview_question_1.obj: Unit_2/interview_question_1.cpp.obj
 .PHONY : Unit_2/interview_question_1.obj
 
@@ -374,6 +387,30 @@ labuladong/labuladong_question_list_leetcode/20.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\20.dir\build.make CMakeFiles/20.dir/labuladong/labuladong_question_list_leetcode/20.cpp.s
 .PHONY : labuladong/labuladong_question_list_leetcode/20.cpp.s
 
+labuladong/labuladong_question_list_leetcode/21.obj: labuladong/labuladong_question_list_leetcode/21.cpp.obj
+.PHONY : labuladong/labuladong_question_list_leetcode/21.obj
+
+# target to build an object file
+labuladong/labuladong_question_list_leetcode/21.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\21.dir\build.make CMakeFiles/21.dir/labuladong/labuladong_question_list_leetcode/21.cpp.obj
+.PHONY : labuladong/labuladong_question_list_leetcode/21.cpp.obj
+
+labuladong/labuladong_question_list_leetcode/21.i: labuladong/labuladong_question_list_leetcode/21.cpp.i
+.PHONY : labuladong/labuladong_question_list_leetcode/21.i
+
+# target to preprocess a source file
+labuladong/labuladong_question_list_leetcode/21.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\21.dir\build.make CMakeFiles/21.dir/labuladong/labuladong_question_list_leetcode/21.cpp.i
+.PHONY : labuladong/labuladong_question_list_leetcode/21.cpp.i
+
+labuladong/labuladong_question_list_leetcode/21.s: labuladong/labuladong_question_list_leetcode/21.cpp.s
+.PHONY : labuladong/labuladong_question_list_leetcode/21.s
+
+# target to generate assembly for a file
+labuladong/labuladong_question_list_leetcode/21.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\21.dir\build.make CMakeFiles/21.dir/labuladong/labuladong_question_list_leetcode/21.cpp.s
+.PHONY : labuladong/labuladong_question_list_leetcode/21.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -383,6 +420,7 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... 20
+	@echo ... 21
 	@echo ... interview_question_1
 	@echo ... interview_question_2
 	@echo ... interview_question_3
@@ -410,6 +448,9 @@ help:
 	@echo ... labuladong/labuladong_question_list_leetcode/20.obj
 	@echo ... labuladong/labuladong_question_list_leetcode/20.i
 	@echo ... labuladong/labuladong_question_list_leetcode/20.s
+	@echo ... labuladong/labuladong_question_list_leetcode/21.obj
+	@echo ... labuladong/labuladong_question_list_leetcode/21.i
+	@echo ... labuladong/labuladong_question_list_leetcode/21.s
 .PHONY : help
 
 

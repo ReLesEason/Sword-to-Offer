@@ -311,6 +311,48 @@
 					<DistClean command="E:/Qt/Tools/mingw1120_64/bin/mingw32-make.exe -f &quot;C:/Users/User/CLionProjects/Sword-to-Offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="21">
+				<Option output="C:/Users/User/CLionProjects/Sword-to-Offer/cmake-build-debug/21.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/User/CLionProjects/Sword-to-Offer/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/Qt/Tools/mingw1120_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="E:/Qt/Tools/mingw1120_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="E:/Qt/Tools/mingw1120_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="E:/Qt/Tools/mingw1120_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="E:/Qt/Tools/mingw1120_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="E:/Qt/Tools/mingw1120_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="E:/Qt/Tools/mingw1120_64/bin/mingw32-make.exe -f &quot;C:/Users/User/CLionProjects/Sword-to-Offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 21"/>
+					<CompileFile command="E:/Qt/Tools/mingw1120_64/bin/mingw32-make.exe -f &quot;C:/Users/User/CLionProjects/Sword-to-Offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/Qt/Tools/mingw1120_64/bin/mingw32-make.exe -f &quot;C:/Users/User/CLionProjects/Sword-to-Offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/Qt/Tools/mingw1120_64/bin/mingw32-make.exe -f &quot;C:/Users/User/CLionProjects/Sword-to-Offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="21/fast">
+				<Option output="C:/Users/User/CLionProjects/Sword-to-Offer/cmake-build-debug/21.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/User/CLionProjects/Sword-to-Offer/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/Qt/Tools/mingw1120_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="E:/Qt/Tools/mingw1120_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="E:/Qt/Tools/mingw1120_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="E:/Qt/Tools/mingw1120_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="E:/Qt/Tools/mingw1120_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="E:/Qt/Tools/mingw1120_64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="E:/Qt/Tools/mingw1120_64/bin/mingw32-make.exe -f &quot;C:/Users/User/CLionProjects/Sword-to-Offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 21/fast"/>
+					<CompileFile command="E:/Qt/Tools/mingw1120_64/bin/mingw32-make.exe -f &quot;C:/Users/User/CLionProjects/Sword-to-Offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/Qt/Tools/mingw1120_64/bin/mingw32-make.exe -f &quot;C:/Users/User/CLionProjects/Sword-to-Offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/Qt/Tools/mingw1120_64/bin/mingw32-make.exe -f &quot;C:/Users/User/CLionProjects/Sword-to-Offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="C:/Users/User/CLionProjects/Sword-to-Offer/cmake-build-debug"/>
 				<Option type="4"/>
@@ -352,6 +394,9 @@
 		</Unit>
 		<Unit filename="C:/Users/User/CLionProjects/Sword-to-Offer/labuladong/labuladong_question_list_leetcode/20.cpp">
 			<Option target="20"/>
+		</Unit>
+		<Unit filename="C:/Users/User/CLionProjects/Sword-to-Offer/labuladong/labuladong_question_list_leetcode/21.cpp">
+			<Option target="21"/>
 		</Unit>
 		<Unit filename="C:/Users/User/CLionProjects/Sword-to-Offer/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
