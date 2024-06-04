@@ -72,6 +72,7 @@ public:
             cerr<<"Invalid Input"<<endl;
             return -1;
         }
+        // 这里的start 和 end 并不做为索引下标，而是数组元素中的元素范围
         int start = 1;
         int end = length - 1;
 
@@ -79,7 +80,7 @@ public:
         {
             // >> 表示右移，相当于除以2，它通过位操作实现，在某些情况下，运算速度比除法快
             // 求一个中间值，在二分排序和快速排序中比较常用
-            int mid = ((end-start)>>1) + start;
+            int mid = ((end-start)>>1) + start;       // 相对于start的偏移量
             int count = getNumCount(nums,length,start,mid);
             if(end==start)
             {

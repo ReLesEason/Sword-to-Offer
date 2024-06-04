@@ -141,22 +141,22 @@ public:
                 cerr<<"an element exceeds the range of the array!"<<endl;
             }
         }
-        int i = 0;
+        int i = 0;      // 从 0 开始
         while(true)
         {
-                if(i == nums[i])
+                if(i == nums[i])   // nums[i]  假设为m, 将 m 与 i比较，如果相等，说明m已在正确的位置上了
                 {
                     i++;
                     continue;
                 }
                 else
                 {
-                    if(nums[i] == nums[nums[i]])
+                    if(nums[i] == nums[nums[i]])      // 如果在i位置上的 m 与第m个数字相等，说明有重复数字了
                     {
                         cout<<nums[i]<<endl;
                         break;
                     }
-                    else
+                    else            // 如果 m 与第m个数字不相等，则将m放到第m个位置上
                     {
                         swap(nums[i],nums[nums[i]]);
                     }
