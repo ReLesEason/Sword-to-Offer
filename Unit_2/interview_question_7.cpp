@@ -162,7 +162,6 @@ public:
 
         return root;
     }
-
 };
 
 void test_2()
@@ -207,8 +206,6 @@ public:
 
         return root;
     }
-
-
 };
 
 void test_3()
@@ -226,7 +223,6 @@ void test_3()
         cout<<p_cur->val<<endl;
         p_cur = p_cur->right;
     }
-
 }
 
 
