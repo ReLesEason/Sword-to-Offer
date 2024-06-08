@@ -22,3 +22,5 @@ add_executable(interview_question_9 Unit_2/interview_question_9.cpp)
 
 add_executable(interview_question_10 Unit_2/interview_question_10.cpp)
 add_executable(interview_question_11 Unit_2/interview_question_11.cpp)
+add_executable(interview_question_12 Unit_2/interview_question_12.cpp)
+add_executable(interview_question_13 Unit_2/interview_question_13.cpp)
