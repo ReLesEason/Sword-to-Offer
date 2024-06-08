@@ -1,115 +1,199 @@
 /***********************************************
 * @author:  ReLesEason
-* @date:    2024/6/6 21:32
+* @date:    2024/6/8 15:07
 * @version: 1.0
 * @description: interview question 8
 ************************************************/
 
 
 /* Detailed Description
- * é¢˜ç›®ï¼šæ—‹è½¬æ•°ç»„ä¸­çš„æœ€å°æ•°å­—
- *
- * 1ã€éå†æ³•
- * 2ã€äºŒåˆ†æ³•
+ * ÌâÄ¿£º¸ø¶¨Ò»¿Å¶ş²æÊ÷ºÍÆäÖĞµÄÒ»¸ö½áµã£¬Èç¹ûÕÒ³öÖĞĞò±éÀúĞòÁĞµÄÏÂÒ»¸ö½áµã£¿
+ * Ê÷ÖĞµÄ½Úµã³ıÁËÓĞÁ½¸ö·Ö±ğÖ¸Ïò×ó¡¢ÓÒ×Ó½ÚµãµÄÖ¸Õë£¬»¹ÓĞÒ»¸öÖ¸Ïò¸¸½ÚµãµÄÖ¸Õë
  */
 
 #include <bits/stdc++.h>
 using namespace std;
 
-class Solution
+struct TreeNode
+{
+    int val;
+    TreeNode * parent;
+    TreeNode * left;
+    TreeNode * right;
+
+    TreeNode(int val):val(val),parent(nullptr),left(nullptr),right(nullptr){}
+};
+
+/* ¶àÖØÌõ¼şÅĞ¶Ï
+ * */
+class Solution_1
 {
 public:
-    // éå†æ³•
-    int func_1(const vector<int>& v)
+    TreeNode* func(TreeNode * node)
     {
-        if (v.empty())
+        if (node == nullptr)
         {
-            return 0;
+            return nullptr;
         }
-        for (int i = 1; i < v.size(); ++i)
+        if (node->right!= nullptr)
         {
-            if(v[i-1]>v[i])
+            TreeNode * temp = node->right;
+            while(temp->left != nullptr)
             {
-                return v[i];
+                temp = temp->left;
             }
+            return temp;
         }
-        return v[0];
 
-    }
+        if(node == node->parent->left && node->right == nullptr)
+        {
+            return node->parent;
+        }
+        if(node == node->parent->right && node->left == nullptr && node->right == nullptr)
+        {
+            TreeNode * temp = node;
+            while(temp->parent!= nullptr)
+            {
+                temp = temp->parent;
+            }
+            return temp;
 
-    // äºŒåˆ†æ³•
-    int func_2(const vector<int> &v)
-    {
-        if(v.empty())
-        {
-            return 0;
         }
-        int low = 0;
-        int high = v.size()-1;
-        int mid = low;
-        while(v[low] >= v[high])
+        if(node == node->parent->right && node->right == nullptr)
         {
-            if(high-low == 1)
-            {
-                mid = high;
-                break;
-            }
-            mid = (high-low)/2 + low;
-            if(v[mid] >= v[low])
-            {
-                low = mid;
-            }
-            else if(v[mid] <= v[high])
-            {
-                high = mid;
-            }
+            cout<<"ÖĞĞò±éÀúµÄ×îºóÒ»¸öÔªËØ,Ã»ÓĞÏÂ¸ö½áµã"<<endl;
+            return nullptr;
         }
-        return v[mid];
     }
 };
 
-
 void test_1()
 {
-    cout<<"------------------------------------------------------test_1-------------------------------------------------"<<endl;
-    vector<int> v{3,4,5,1,2};
-    Solution solution;
-    cout<<solution.func_1(v)<<endl;
+    cout<<"---------------------------------------------------test_1----------------------------------------------------"<<endl;
+    TreeNode * root = new TreeNode(1);
+    TreeNode * root_left= new TreeNode(2);
+    TreeNode * root_left_left= new TreeNode(4);
+    TreeNode * root_left_right= new TreeNode(5);
+
+    TreeNode * root_right= new TreeNode(3);
+    TreeNode * root_right_left= new TreeNode(6);
+    TreeNode * root_right_left_left= new TreeNode(7);
+
+    root->parent = nullptr;
+    root->left = root_left;
+    root->left->left = root_left_left;
+    root->left->right = root_left_right;
+
+    root->right = root_right;
+    root->right->left = root_right_left;
+    root->right->left->left = root_right_left_left;
+
+    root_left->parent =root;
+    root_left->left = root->left->left;
+    root_left->right = root_left_right;
+
+    root_left_left->parent = root_left;
+    root_left_right->parent = root_left;
+
+    root_right->parent = root;
+    root_right->left = root_right_left;
+
+    root_right_left->parent = root_right;
+    root_right_left->left = root_right_left_left;
+
+    root_right_left_left->parent = root_right_left;
+
+    Solution_1 solution1;
+    TreeNode * findNode = root_right_left   ;
+    if (solution1.func(findNode))
+    {
+        cout<<solution1.func(findNode)->val<<endl;
+    }
 
 }
 
+/* ¸ù¾İÖĞĞò±éÀúµÄÌØĞÔ½øĞĞÅĞ¶Ï
+ * */
+class Solution_2
+{
+public:
+    TreeNode * func(TreeNode * node)
+    {
+        if (node == nullptr)
+        {
+            return nullptr;
+        }
+        TreeNode * resultNode = nullptr;
+
+        // Èç¹û¸Ã½áµãÓĞÓÒ×ÓÊ÷£¬ÔòºóÒ»¸ö½áµãÒª²»ÊÇ¸ÃÓÒ½áµã£¬Òª²»ÊÇÓÒ×ÓÊ÷µÄ×î×óÏÂ½Ç½áµã
+        if(node->right != nullptr)
+        {
+            TreeNode * temp = node->right;
+            while(temp->left!= nullptr)
+            {
+                temp = temp->left;
+            }
+            resultNode = temp;
+        }
+
+
+        // Èç¹û¸Ã½áµãÃ»ÓĞÓÒ×ÓÊ÷£¬µ«´æÔÚË«Ç×½áµã,½«¸Ã½áµãÍùÉÏ±ä£¬µ±±ä¸¸½áµãµÄ×ó½áµãÊ±£¬´ËÊ±µÄ¸¸½áµã¾ÍÊÇÏÂ¸ö½áµã
+        if(node->parent != nullptr)
+        {
+            TreeNode * curNode = node;
+            TreeNode * parNode = node->parent;
+            while(parNode!= nullptr && curNode == parNode->right)
+            {
+                curNode = parNode;
+                parNode = parNode->parent;
+            }
+            resultNode = parNode;
+        }
+    }
+};
 void test_2()
 {
-    cout<<"------------------------------------------------------test_2-------------------------------------------------"<<endl;
-    vector<int> v{3,4,5,6,7};
-    Solution solution;
-    cout<<solution.func_1(v)<<endl;
+    cout<<"---------------------------------------------------test_2----------------------------------------------------"<<endl;
+    TreeNode * root = new TreeNode(1);
+    TreeNode * root_left= new TreeNode(2);
+    TreeNode * root_left_left= new TreeNode(4);
+    TreeNode * root_left_right= new TreeNode(5);
 
-}
+    TreeNode * root_right= new TreeNode(3);
+    TreeNode * root_right_left= new TreeNode(6);
+    TreeNode * root_right_left_left= new TreeNode(7);
 
-void test_3()
-{
-    cout<<"------------------------------------------------------test_3-------------------------------------------------"<<endl;
-    vector<int> v{3,4,5,1,2};
-    Solution solution;
-    cout<<solution.func_2(v)<<endl;
+    root->parent = nullptr;
+    root->left = root_left;
+    root->right = root_right;
 
-}
+    root_left->parent = root;
+    root_left->left = root_left_left;
+    root_left->right = root_left_right;
 
-void test_4()
-{
-    cout<<"------------------------------------------------------test_4-------------------------------------------------"<<endl;
-    vector<int> v{3,4,5,6,7};
-    Solution solution;
-    cout<<solution.func_2(v)<<endl;
+    root_left_left->parent = root_left;
+    root_left_right->parent = root_left;
+
+    root_right->parent = root;
+    root_right->left = root_right_left;
+
+    root_right_left->parent = root_right;
+    root_right_left->left = root_right_left_left;
+
+    root_right_left_left->parent = root_right_left;
+
+    Solution_1 solution2;
+    TreeNode * findNode = root_left_left   ;
+    if (solution2.func(findNode))
+    {
+        cout<<solution2.func(findNode)->val<<endl;
+    }
 
 }
 
 int main() {
     test_1();
     test_2();
-    test_3();
-    test_4();
 
     return 0;
 }

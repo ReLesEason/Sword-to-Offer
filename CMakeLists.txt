@@ -18,4 +18,7 @@ add_executable(21 labuladong/labuladong_question_list_leetcode/21.cpp)
 add_executable(interview_question_6 Unit_2/interview_question_6.cpp)
 add_executable(interview_question_7 Unit_2/interview_question_7.cpp)
 add_executable(interview_question_8 Unit_2/interview_question_8.cpp)
-add_executable(interview_question_9 Unit_2/interview_question_10.cpp)
+add_executable(interview_question_9 Unit_2/interview_question_9.cpp)
+
+add_executable(interview_question_10 Unit_2/interview_question_10.cpp)
+add_executable(interview_question_11 Unit_2/interview_question_11.cpp)
